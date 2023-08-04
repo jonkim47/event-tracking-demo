@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, h1, h2, p, ul, li, a {
+body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
     border: 0;
@@ -8,23 +8,21 @@ body, h1, h2, p, ul, li, a {
 
 /* Basic styling */
 body {
-    background-color: #f9f9f9;
+    background-color: #f7f7f7;
     color: #333;
     line-height: 1.6;
 }
 
-/* ... Add your CSS styling for other sections ... */
-
 /* Header */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
+    text-align: center;
 }
 
 nav ul li {
@@ -33,8 +31,165 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-/* ... Add more CSS styles ... */
+nav ul li a:hover {
+    color: #007bff;
+}
+
+.user-menu {
+    margin-left: auto;
+}
+
+.user-menu a {
+    color: #007bff;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/hero.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Features Section */
+.features {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.feature {
+    display: inline-block;
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+}
+
+/* Products Section */
+.products {
+    background-color: #f7f7f7;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.product {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.product p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.product-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+    }
+}
