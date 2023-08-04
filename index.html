@@ -3,29 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Event Tracking Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Segment B2B</title>
 </head>
 <body>
     <header>
-        <h1>Event Tracking Demo</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <img src="images/image1.jpg" alt="Image 1">
-        <img src="images/image2.jpg" alt="Image 2">
-        <!-- Add more images here -->
-        <button id="button1">Button 1</button>
-        <button id="button2">Button 2</button>
-        <!-- Add more buttons here -->
-    </main>
-    <script src="js/script.js"></script>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Your Data, Simplified</h1>
+            <p>Unlock insights, drive growth, and reduce costs with our data solutions.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="feature">
+            <div class="feature-icon">Icon</div>
+            <h2>Data Integration</h2>
+            <p>Integrate data from multiple sources seamlessly.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">Icon</div>
+            <h2>Advanced Analytics</h2>
+            <p>Gain deep insights with powerful analytics tools.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">Icon</div>
+            <h2>Real-time Tracking</h2>
+            <p>Track your data in real-time for actionable insights.</p>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <h2>Choose a Plan</h2>
+        <div class="pricing-card">
+            <h3>Starter</h3>
+            <p>For small teams and startups</p>
+            <span class="price">$29/month</span>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Business</h3>
+            <p>For growing businesses</p>
+            <span class="price">$99/month</span>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+        <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p>For large enterprises</p>
+            <span class="price">Contact Us</span>
+            <a href="#" class="cta-button">Contact Sales</a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Contact our team to learn more.</p>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="cta-button">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Segment B2B. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
