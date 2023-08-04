@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const button1 = document.getElementById('button1');
-    const button2 = document.getElementById('button2');
+    const userMenu = document.querySelector('.user-menu');
+    const loginButton = userMenu.querySelector('a:first-child');
+    const logoutButton = userMenu.querySelector('a:last-child');
 
-    button1.addEventListener('click', function() {
-        console.log('Button 1 clicked');
+    loginButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Add your login functionality here
+        alert('Login clicked');
     });
 
-    button2.addEventListener('click', function() {
-        console.log('Button 2 clicked');
+    logoutButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        // Add your logout functionality here
+        alert('Logout clicked');
     });
+
+    // ... Add more JavaScript functionality ...
 });

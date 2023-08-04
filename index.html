@@ -4,124 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Segment B2B</title>
+    <title>ABC Corp</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
+            <div class="user-menu">
+                <a href="#">Login</a>
+                <a href="#">Logout</a>
+            </div>
         </nav>
     </header>
 
-    <section id="hero" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Your Data, Simplified</h1>
-            <p>Unlock insights, drive growth, and reduce costs with our data solutions.</p>
-            <a href="#" class="cta-button">Get Started</a>
+            <h1>Welcome to ABC Corp</h1>
+            <p>Your Partner for Business Success</p>
+            <a href="#" class="cta-button">Learn More</a>
         </div>
     </section>
 
-    <section id="features" class="features">
+    <section class="features">
         <div class="feature">
-            <div class="feature-icon">Icon</div>
-            <h2>Data Integration</h2>
-            <p>Integrate data from multiple sources seamlessly.</p>
+            <div class="feature-icon">🚀</div>
+            <h2>Efficient Solutions</h2>
+            <p>We provide cutting-edge solutions to streamline your operations and boost efficiency.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">Icon</div>
-            <h2>Advanced Analytics</h2>
-            <p>Gain deep insights with powerful analytics tools.</p>
+            <div class="feature-icon">💡</div>
+            <h2>Innovative Services</h2>
+            <p>Our innovative services help you stay ahead in today's competitive business landscape.</p>
         </div>
         <div class="feature">
-            <div class="feature-icon">Icon</div>
-            <h2>Real-time Tracking</h2>
-            <p>Track your data in real-time for actionable insights.</p>
+            <div class="feature-icon">🌐</div>
+            <h2>Global Reach</h2>
+            <p>With a global presence, we help you expand your reach and explore new markets.</p>
         </div>
     </section>
 
-    <section id="pricing" class="pricing">
-        <h2>Choose a Plan</h2>
-        <div class="pricing-card">
-            <h3>Starter</h3>
-            <p>For small teams and startups</p>
-            <span class="price">$29/month</span>
-            <a href="#" class="cta-button">Get Started</a>
+    <section class="products">
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="product-button">Learn More</a>
         </div>
-        <div class="pricing-card">
-            <h3>Business</h3>
-            <p>For growing businesses</p>
-            <span class="price">$99/month</span>
-            <a href="#" class="cta-button">Get Started</a>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <a href="#" class="product-button">Learn More</a>
         </div>
-        <div class="pricing-card">
-            <h3>Enterprise</h3>
-            <p>For large enterprises</p>
-            <span class="price">Contact Us</span>
-            <a href="#" class="cta-button">Contact Sales</a>
+        <div class="product">
+            <h2>Product 3</h2>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <a href="#" class="product-button">Learn More</a>
         </div>
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Contact our team to learn more.</p>
-        <form>
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit" class="cta-button">Send</button>
-        </form>
-    </section>
+    <!-- Additional sections (testimonials, about, contact) would go here -->
 
     <footer>
-        <p>&copy; 2023 Segment B2B. All rights reserved.</p>
+        <p>&copy; 2023 ABC Corp. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Smooth scrolling
-        const links = document.querySelectorAll('nav ul li a');
-      
-        links.forEach(link => {
-          link.addEventListener('click', e => {
-            e.preventDefault();
-            const target = document.querySelector(link.getAttribute('href'));
-            target.scrollIntoView({
-              behavior: 'smooth'
-            });
-          });
-        });
-      
-        // Toggle menu on small screens
-        const menuButton = document.querySelector('.menu-button');
-        const navMenu = document.querySelector('nav ul');
-      
-        menuButton.addEventListener('click', () => {
-          navMenu.classList.toggle('show');
-        });
-      </script>
-
-      <!-- Scroll Reveal Library -->
-      <script src="https://unpkg.com/scrollreveal@4.1.0/dist/scrollreveal.min.js"></script>
-
-      <script>
-        // Scroll reveal animations
-        const sr = ScrollReveal({
-          origin: 'bottom',
-          distance: '20px',
-          duration: 1000,
-          delay: 200,
-          reset: true
-        });
-      
-        sr.reveal('.feature');
-        sr.reveal('.pricing-card');
-        sr.reveal('.contact form');
-      </script>
-
 </body>
 </html>
