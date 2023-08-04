@@ -82,5 +82,46 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Smooth scrolling
+        const links = document.querySelectorAll('nav ul li a');
+      
+        links.forEach(link => {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(link.getAttribute('href'));
+            target.scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+      
+        // Toggle menu on small screens
+        const menuButton = document.querySelector('.menu-button');
+        const navMenu = document.querySelector('nav ul');
+      
+        menuButton.addEventListener('click', () => {
+          navMenu.classList.toggle('show');
+        });
+      </script>
+
+      <!-- Scroll Reveal Library -->
+      <script src="https://unpkg.com/scrollreveal@4.1.0/dist/scrollreveal.min.js"></script>
+
+      <script>
+        // Scroll reveal animations
+        const sr = ScrollReveal({
+          origin: 'bottom',
+          distance: '20px',
+          duration: 1000,
+          delay: 200,
+          reset: true
+        });
+      
+        sr.reveal('.feature');
+        sr.reveal('.pricing-card');
+        sr.reveal('.contact form');
+      </script>
+
 </body>
 </html>
