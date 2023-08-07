@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
 
         login(name, email); // Call the login function to log the user in
+        trackLogin(name, email);
 
         modal.style.display = 'none';
     });
@@ -91,16 +92,15 @@ document.addEventListener('DOMContentLoaded', function() {
     function logout() {
         localStorage.removeItem('userLoggedIn');
         localStorage.removeItem('userEmail');
+        analytics.reset();
         updateLoginButton();
     }
 
     function trackLogin(name, email) {
         // Replace this with your actual tracking code or other actions
-        analytics.identify("97980cfea0067", {
+        analytics.identify(email, {
             name: name,
-            email: email,
-            plan: "premium",
-            logins: 5
+            email: email
         });
 
         console.log(`Logged in: Name - ${name}, Email - ${email}`);
