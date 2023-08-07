@@ -79,6 +79,95 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Product modals functionality
+
+    const productButtons = document.querySelectorAll('.product-button');
+    const productModal = document.querySelector('.product-modal');
+    const productDetailsContainer = document.querySelector('.product-details');
+
+    productButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const productId = this.getAttribute('data-product');
+            const productDetails = getProductDetails(productId); // Replace with your own function to get product details
+
+            // Populate the modal content with product details
+            productDetailsContainer.innerHTML = `
+                <h3>${productDetails.name}</h3>
+                <p>${productDetails.description}</p>
+                <img id="product-image" src="${productDetails.image}" alt="Product Image">
+                <!-- Add more product details here -->
+            `;
+
+            // Show the product modal
+            productModal.style.display = 'block';
+        });
+    });
+
+    const closeProductModalButton = document.querySelector('.close-product-modal-button');
+    closeProductModalButton.addEventListener('click', function() {
+        productModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === productModal) {
+            productModal.style.display = 'none';
+        }
+    });
+
+    function getProductDetails(productId) {
+        // Example data for demonstration purposes
+        const products = {
+            1: {
+                name: 'Product 1',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae mauris id ligula condimentum feugiat.',
+                price: '$99.99',
+                image: 'product1.png',
+                // Add more properties as needed
+            },
+            2: {
+                name: 'Product 2',
+                description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                price: '$149.99',
+                image: 'product2.png',
+                // Add more properties as needed
+            },
+            3: {
+                name: 'Product 3',
+                description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+                price: '$199.99',
+                image: 'product3.png',
+                // Add more properties as needed
+            },
+            4: {
+                name: 'Product 4',
+                description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                price: '$249.99',
+                image: 'product4.png',
+                // Add more properties as needed
+            },
+            5: {
+                name: 'Product 5',
+                description: 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+                price: '$299.99',
+                image: 'product5.png',
+                // Add more properties as needed
+            },
+            6: {
+                name: 'Product 6',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit.',
+                price: '$349.99',
+                image: 'product6.png',
+                // Add more properties as needed
+            },
+        };
+    
+        return products[productId];
+    }
+    
+
+
+    // Login Functionality
+
     function isLoggedIn() {
         return localStorage.getItem('userLoggedIn') === 'true';
     }

@@ -313,4 +313,46 @@ footer {
     }
 }
 
+/* Product Modals */
+.product-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.product-image-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#product-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-details-container {
+    padding: 20px;
+    text-align: left;
+}
+
+#product-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#product-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
 /* ... other CSS styles ... */
