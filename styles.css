@@ -355,7 +355,6 @@ footer {
     color: #555;
 }
 
-
 /* Contact Us Modal */
 .contact-modal {
     display: none;
@@ -367,7 +366,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .contact-modal-content {
@@ -380,6 +379,7 @@ footer {
     max-height: 90%; /* Adjust the maximum height as needed */
     overflow: auto; /* Enable scrolling if content exceeds the modal height */
     display: flex;
+    margin: auto;
 }
 
 .contact-left {
@@ -402,8 +402,13 @@ footer {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+
 }
+
+.contact-form {
+    margin-right: 5em;
+    margin-left: 5em;
+}  
 
 .contact-form label {
     font-size: 16px;
@@ -420,6 +425,7 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
+    width: 12em;
 }
 
 .contact-form button[type="submit"],
@@ -433,126 +439,6 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s;
 }
-
-/* ... Other styles ... */
-
-
-
-
-/* .contact-modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact-modal-content {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    display: flex;
-    width: 90%;
-    max-width: 1500px;
-    align-items: center;
-}
-
-.contact-left {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border-right: 1px solid #ccc;
-}
-
-.contact-left img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.contact-text {
-    flex: 1; 
-    padding-right: 20px;
-}
-
-.contact-right {
-    flex: 1;
-    padding: 20px; 
-}
-
-.contact-modal-heading {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-form label {
-    font-size: 16px;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form input[type="tel"],
-.contact-form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.contact-form textarea {
-    resize: vertical;
-}
-
-.contact-form button[type="submit"] {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.contact-form button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-.close-contact-modal-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #555;
-}
-
-.contact-modal-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 20px;
-} */
-
 
 /* ... other CSS rules ... */
 
