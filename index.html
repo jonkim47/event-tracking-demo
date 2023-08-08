@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>ABC Corp - Demo</title>
-    <script src="script.js"></script>
 
     <!-- Load AJS -->
     <script>
@@ -37,7 +36,7 @@
         <div class="hero-content">
             <h1>Welcome to ABC Corp</h1>
             <p>Your Partner for Business Success</p>
-            <a href="#" class="cta-button">Learn More</a>
+            <a href="#" class="cta-button open-contact-modal-button">Contact Us</a>
         </div>
     </section>
 
@@ -118,7 +117,7 @@
 
 
 <!-- Login Modal -->
-<div class="modal">
+<div class="modal login-modal">
     <div class="modal-content">
         <span class="close-modal-button">&times;</span>
         <h2>Login</h2>
@@ -132,10 +131,47 @@
     </div>
 </div>
 
+
+<!-- Contact Us Modal -->
+<div class="modal contact-modal">
+    <div class="modal-content">
+        <span class="close-modal-button" id="closeContactModal">&times;</span>
+        <div class="contact-modal-content">
+            <div class="contact-info">
+                <img src="contact-us.jpeg" alt="Contact Image" class="contact-modal-image">
+                <p>Welcome to ABC Corp! Feel free to contact us using the form below.</p>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form id="contact-modal-form" class="modal-form">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+
+                    <label for="contact-email">Email:</label>
+                    <input type="email" id="contact-email" name="contact-email" required>
+
+                    <label for="contact-phone">Telephone Number:</label>
+                    <input type="tel" id="contact-phone" name="contact-phone">
+
+                    <label for="contact-job-title">Job Title:</label>
+                    <input type="text" id="contact-job-title" name="contact-job-title">
+
+                    <label for="contact-company">Company:</label>
+                    <input type="text" id="contact-company" name="contact-company">
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <footer>
     <p>&copy; 2023 ABC Corp. All rights reserved.</p>
 </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
